@@ -1,0 +1,363 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--first-bgc: #2e2614;
+	--second-bgc: #262014;
+	--first-letters: #e7e4dd;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+header {
+	.banner {
+		height: 250px;
+		width: 100vw;
+		background-image: url("../pic/photographs-256888_1920.jpg");
+		background-size: cover;
+
+		.header-style {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+			font-family: "Bebas Neue", sans-serif;
+			letter-spacing: 2px;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.6);
+
+			.header-name {
+				font-size: 54px;
+			}
+
+			.description {
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+.about-us-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 40px 40px;
+	color: var(--first-letters);
+	background-color: var(--first-bgc);
+
+	h1 {
+		padding: 10px;
+		font-size: 30px;
+	}
+	p {
+		padding: 10px;
+		font-size: 20px;
+	}
+}
+
+.sessions-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 20px;
+	color: var(--first-letters);
+	background-color: var(--second-bgc);
+
+	h1 {
+		padding: 10px;
+		font-size: 30px;
+	}
+
+	.photo {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		width: 90%;
+		height: 250px;
+		margin: 20px 0;
+		color: var(--second-bgc);
+		background-size: cover;
+		background-position: center;
+		border-radius: 20px;
+
+		.session-text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 20%;
+			font-size: 26px;
+			text-align: center;
+			text-transform: uppercase;
+			background-color: rgba(255, 255, 255, 0.5);
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+	}
+
+	.family {
+		background-image: url("../pic/family-6398107_1280.jpg");
+	}
+
+	.outdoor {
+		background-image: url("../pic/woman-5216414_1280.jpg");
+	}
+
+	.wedding {
+		background-image: url("../pic/wedding-2595862_1280.jpg");
+	}
+
+	.business {
+		background-image: url("../pic/mentor-2494673_1280.jpg");
+	}
+}
+
+footer {
+	height: 300px;
+	text-align: center;
+	color: var(--first-letters);
+	background-color: var(--first-bgc);
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 50px;
+		h1 {
+			padding: 30px 10px 20px;
+			font-size: 30px;
+		}
+
+		p {
+			font-size: 20px;
+			margin: 10px 0;
+			.fa {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.copy {
+		margin-top: 40px;
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		.banner {
+			height: 360px;
+			.header-style {
+				.header-name {
+					font-size: 66px;
+				}
+
+				.description {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+
+	.about-us-section {
+		h1 {
+			padding: 16px;
+			font-size: 38px;
+		}
+		p {
+			margin: 0 20px;
+			padding: 10px;
+			font-size: 24px;
+		}
+	}
+
+	.sessions-section {
+		h1 {
+			padding: 16px;
+			font-size: 38px;
+		}
+
+		.photo {
+			height: 350px;
+			margin: 40px 20px;
+
+			.session-text {
+				font-size: 30px;
+			}
+		}
+	}
+
+	footer {
+		height: 370px;
+		.contact {
+			padding-left: 80px;
+			h1 {
+				padding: 50px 10px 30px;
+				font-size: 38px;
+			}
+
+			p {
+				font-size: 20px;
+				margin: 10px 0;
+				.fa {
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.copy {
+			margin: 40px;
+			font-size: 18px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	header {
+		.banner {
+			height: 400px;
+			.header-style {
+				.header-name {
+					font-size: 82px;
+				}
+
+				.description {
+					font-size: 44px;
+				}
+			}
+		}
+	}
+
+	.about-us-section {
+		h1 {
+			padding: 16px;
+			font-size: 42px;
+		}
+		p {
+			margin: 0 40px;
+			padding: 10px;
+			font-size: 24px;
+		}
+	}
+
+	.sessions-section {
+		padding: 40px 20px 50px;
+
+		h1 {
+			padding: 16px;
+			font-size: 42px;
+		}
+
+		.photo {
+			margin: 40px;
+			width: 87%;
+			height: 420px;
+			.session-text {
+				font-size: 30px;
+			}
+		}
+	}
+
+	footer {
+		height: 370px;
+		.contact {
+			padding-left: 80px;
+			h1 {
+				padding: 50px 10px 30px;
+				font-size: 40px;
+			}
+
+			p {
+				font-size: 18px;
+				margin: 10px 0;
+				.fa {
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.copy {
+			margin: 40px;
+			font-size: 18px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		.banner {
+			height: 400px;
+			.header-style {
+				.header-name {
+					font-size: 82px;
+				}
+
+				.description {
+					font-size: 44px;
+				}
+			}
+		}
+	}
+
+	.about-us-section {
+		h1 {
+			padding: 16px;
+			font-size: 42px;
+		}
+		p {
+			max-width: 1000px;
+			margin: 0 40px;
+			padding: 10px 0;
+			font-size: 24px;
+		}
+	}
+
+	.sessions-section {
+		h1 {
+			padding: 16px;
+			font-size: 42px;
+		}
+
+		.photo {
+			margin: 40px;
+			width: 1000px;
+			height: 500px;
+			.session-text {
+				font-size: 30px;
+			}
+		}
+	}
+
+	footer {
+		padding-left: 150px;
+		height: 340px;
+		.contact {
+			margin-left: 50px;
+			h1 {
+				padding: 50px 10px 30px;
+				font-size: 40px;
+			}
+
+			p {
+				font-size: 18px;
+				margin: 10px 0;
+				.fa {
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.copy {
+			margin: 30px;
+			font-size: 18px;
+		}
+	}
+}
